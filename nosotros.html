@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nosotros | Micky Arquitectos</title>
+  <meta name="description" content="Somos un estudio técnico enfocado en diseño, modelado BIM y capacitación en software de arquitectura e ingeniería civil." />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/tailwind-config.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body class="bg-brandBg text-brandPrimary font-sans antialiased">
+
+  <!-- ==================== HEADER / NAVBAR (COMPARTIDO) ==================== -->
+  <div id="site-header"></div>
+
+  <main>
+    <!-- ==================== ENCABEZADO CLARO ==================== -->
+    <header class="relative bg-brandBorder border-b border-brandBorder overflow-hidden">
+      <div class="pointer-events-none absolute inset-0 bg-blueprint opacity-40"></div>
+      <div class="absolute inset-0 z-0">
+        <img src="imagenes/imagen_quienes_somos.jpg" alt="Quiénes somos" class="w-full h-full object-cover opacity-15">
+      </div>
+
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+        <nav class="text-[10px] font-bold tracking-widest uppercase text-brandSecondary" aria-label="Ruta de navegación">
+          <a href="index.html" class="hover:text-brandPrimary transition-colors">Inicio</a>
+          <span class="mx-2 text-brandBorder/40">/</span>
+          <span class="text-brandAccent">Nosotros</span>
+        </nav>
+        <h1 class="mt-4 text-4xl sm:text-5xl font-semibold text-brandPrimary tracking-tight">Quiénes somos</h1>
+        <p class="mt-4 max-w-2xl text-brandSecondary text-lg leading-relaxed">
+          Somos un estudio técnico enfocado en soluciones integrales de diseño, modelado BIM y capacitación especializada en software de arquitectura e ingeniería.
+        </p>
+      </div>
+    </header>
+
+    <!-- ==================== MISIÓN, VISIÓN Y VALOR ==================== -->
+    <section class="relative py-24 bg-brandBg border-b border-brandBorder overflow-hidden">
+      <!-- Cuadrícula animada de fondo -->
+      <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
+        <div class="absolute inset-0 w-full h-full plano-fino" style="
+          background-image:
+            linear-gradient(to right, rgba(31,111,84,0.22) 2px, transparent 2px),
+            linear-gradient(to bottom, rgba(31,111,84,0.22) 2px, transparent 2px);
+          background-size: 44px 44px;
+          opacity: 1;
+        "></div>
+        <div class="absolute inset-0 w-full h-full plano-grueso" style="
+          background-image:
+            linear-gradient(to right, rgba(31,111,84,0.14) 2px, transparent 2px),
+            linear-gradient(to bottom, rgba(31,111,84,0.14) 2px, transparent 2px);
+          background-size: 132px 132px;
+          opacity: 1;
+        "></div>
+      </div>
+
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+          <!-- Misión · Salvia -->
+          <div data-reveal class="bg-[#E6EADF] p-10 rounded-2xl border border-[#CBD3C0] border-t-4 border-t-[#5F7355] hover-card">
+            <div class="w-14 h-14 bg-[#5F7355] text-white rounded-xl flex items-center justify-center text-2xl mb-6 shadow-md">
+              <i class="fa-solid fa-bullseye"></i>
+            </div>
+            <h2 class="text-xl font-semibold text-[#2F3A2A] mb-3">Misión</h2>
+            <p class="text-[#55604E] text-sm leading-relaxed">
+              Brindar servicios especializados de diseño, modelado y formación con precisión técnica, puntualidad en las entregas y un trato totalmente personalizado para cada cliente.
+            </p>
+          </div>
+
+          <!-- Visión · Azul pizarra -->
+          <div data-reveal class="bg-[#E1E7EA] p-10 rounded-2xl border border-[#C2CDD3] border-t-4 border-t-[#4B6272] hover-card">
+            <div class="w-14 h-14 bg-[#4B6272] text-white rounded-xl flex items-center justify-center text-2xl mb-6 shadow-md">
+              <i class="fa-solid fa-eye"></i>
+            </div>
+            <h2 class="text-xl font-semibold text-[#25323B] mb-3">Visión</h2>
+            <p class="text-[#4F5F69] text-sm leading-relaxed">
+              Ser un referente nacional en desarrollo digital de arquitectura e ingeniería civil, destacando por la aplicación rigurosa de metodologías BIM y alta calidad gráfica.
+            </p>
+          </div>
+
+          <!-- Aporte de valor · Ocre -->
+          <div data-reveal class="bg-[#F0E5CF] p-10 rounded-2xl border border-[#DCCBA6] border-t-4 border-t-[#A9843F] hover-card">
+            <div class="w-14 h-14 bg-[#A9843F] text-white rounded-xl flex items-center justify-center text-2xl mb-6 shadow-md">
+              <i class="fa-solid fa-gem"></i>
+            </div>
+            <h2 class="text-xl font-semibold text-[#3E3017] mb-3">Aporte de valor</h2>
+            <ul class="space-y-3 text-[#6B5A38] text-sm">
+              <li class="flex items-start gap-3">
+                <span class="mt-0.5 w-5 h-5 shrink-0 rounded-full bg-[#A9843F] text-white flex items-center justify-center text-[10px]">
+                  <i class="fa-solid fa-check"></i>
+                </span>
+                <span class="text-sm">Modelos BIM paramétricos personalizables</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="mt-0.5 w-5 h-5 shrink-0 rounded-full bg-[#A9843F] text-white flex items-center justify-center text-[10px]">
+                  <i class="fa-solid fa-check"></i>
+                </span>
+                <span class="text-sm">Planos 2D y 3D listos para sustentar y entregar</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="mt-0.5 w-5 h-5 shrink-0 rounded-full bg-[#A9843F] text-white flex items-center justify-center text-[10px]">
+                  <i class="fa-solid fa-check"></i>
+                </span>
+                <span class="text-sm">Capacitación en vivo adaptada a tus objetivos</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- Indicadores -->
+        <div data-reveal class="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-8">
+
+          <!-- 100% Precisión BIM · Azul pizarra -->
+          <div class="flex items-center gap-4 bg-[#E1E7EA] border border-[#C2CDD3] rounded-2xl p-6 hover-card">
+            <div class="w-14 h-14 shrink-0 bg-[#4B6272] text-white rounded-xl flex items-center justify-center text-2xl shadow-md">
+              <i class="fa-solid fa-cubes"></i>
+            </div>
+            <div class="text-left">
+              <div class="text-3xl font-extrabold text-[#25323B] leading-none">100%</div>
+              <div class="text-sm text-[#4F5F69] mt-1.5">Precisión BIM</div>
+            </div>
+          </div>
+
+          <!-- 3D + 2D · Terracota -->
+          <div class="flex items-center gap-4 bg-[#F0DDD2] border border-[#DFC0AF] rounded-2xl p-6 hover-card">
+            <div class="w-14 h-14 shrink-0 bg-[#B0603F] text-white rounded-xl flex items-center justify-center text-2xl shadow-md">
+              <i class="fa-solid fa-ruler-combined"></i>
+            </div>
+            <div class="text-left">
+              <div class="text-3xl font-extrabold text-[#40221A] leading-none">3D + 2D</div>
+              <div class="text-sm text-[#6E4538] mt-1.5">Planos ejecutivos</div>
+            </div>
+          </div>
+
+          <!-- Directo · Salvia -->
+          <div class="flex items-center gap-4 bg-[#E6EADF] border border-[#CBD3C0] rounded-2xl p-6 hover-card">
+            <div class="w-14 h-14 shrink-0 bg-brandGreen text-white rounded-xl flex items-center justify-center text-3xl shadow-md">
+              <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            <div class="text-left">
+              <div class="text-3xl font-extrabold text-[#2F3A2A] leading-none">Directo</div>
+              <div class="text-sm text-[#55604E] mt-1.5">Asesoría por WhatsApp</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CTA CLARO ==================== -->
+    <section class="relative py-24 bg-brandBg border-b border-brandBorder overflow-hidden">
+      <!-- Cuadrícula animada de fondo -->
+      <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
+        <div class="absolute inset-0 w-full h-full plano-fino" style="
+          background-image:
+            linear-gradient(to right, rgba(31,111,84,0.22) 2px, transparent 2px),
+            linear-gradient(to bottom, rgba(31,111,84,0.22) 2px, transparent 2px);
+          background-size: 44px 44px;
+          opacity: 1;
+        "></div>
+        <div class="absolute inset-0 w-full h-full plano-grueso" style="
+          background-image:
+            linear-gradient(to right, rgba(31,111,84,0.14) 2px, transparent 2px),
+            linear-gradient(to bottom, rgba(31,111,84,0.14) 2px, transparent 2px);
+          background-size: 132px 132px;
+          opacity: 1;
+        "></div>
+      </div>
+
+      <div class="relative max-w-4xl mx-auto px-4 text-center" data-reveal>
+        <p class="text-[11px] font-bold tracking-widest text-brandAccent uppercase">Trabajemos juntos</p>
+        <h2 class="mt-4 text-3xl sm:text-4xl font-semibold text-brandPrimary leading-tight">Conoce lo que podemos hacer por tu proyecto</h2>
+        <p class="mt-5 max-w-2xl mx-auto text-brandSecondary text-sm leading-relaxed">
+          Revisa nuestros servicios de modelado, planos y capacitación técnica.
+        </p>
+        <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="servicios.html" class="w-full sm:w-auto px-8 py-4 rounded-xl border border-brandBorder text-brandPrimary font-semibold hover:bg-brandBg transition-colors text-center">
+            Ver servicios
+          </a>
+          <a href="flujo.html" class="w-full sm:w-auto px-8 py-4 rounded-xl border border-brandBorder text-brandPrimary font-semibold hover:bg-brandBg transition-colors text-center">
+            Cómo funciona
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER (COMPARTIDO) ==================== -->
+  <div id="site-footer"></div>
+
+  <div id="site-widgets"></div>
+
+  <script src="js/widgets.js"></script>
+  <script src="js/layout-loader.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

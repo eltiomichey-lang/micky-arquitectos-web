@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cómo funciona | Micky Arquitectos</title>
+  <meta name="description" content="Conoce el proceso de solicitud: elige tu servicio, confirma el alcance, completa tus datos y recibe seguimiento por WhatsApp." />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/tailwind-config.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body class="bg-brandBg text-brandPrimary font-sans antialiased">
+
+  <!-- ==================== HEADER / NAVBAR (COMPARTIDO) ==================== -->
+  <div id="site-header"></div>
+
+  <main>
+    <!-- ==================== ENCABEZADO CLARO ==================== -->
+    <header class="relative bg-brandBorder border-b border-brandBorder p-2 overflow-hidden">
+      <div class="pointer-events-none absolute inset-0 bg-blueprint opacity-40"></div>
+      <!-- Imagen de fondo suave para la franja de "Cómo funciona" -->
+      <div class="absolute inset-0 z-0">
+        <img src="imagenes/imagen_flujo.jpg" alt="Cómo funciona" class="w-full h-full object-cover opacity-15" style="object-position: center 32%;">
+      </div>
+
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+        <nav class="text-[10px] font-bold tracking-widest uppercase text-brandSecondary" aria-label="Ruta de navegación">
+          <a href="index.html" class="hover:text-brandPrimary transition-colors">Inicio</a>
+          <span class="mx-2 text-brandBorder/40">/</span>
+          <span class="text-brandAccent">Cómo funciona</span>
+        </nav>
+        <h1 class="mt-4 text-4xl sm:text-5xl font-semibold text-brandPrimary tracking-tight">Solicita en simples pasos</h1>
+        <p class="mt-4 max-w-2xl text-brandSecondary text-lg leading-relaxed">
+          Diseñamos un flujo ágil para responder a tus entregas universitarias o requerimientos profesionales sin complicaciones.
+        </p>
+      </div>
+    </header>
+
+    <!-- ==================== PASOS CON LÍNEA CONECTORA ==================== -->
+    <section class="relative py-24 bg-white border-b border-brandBorder overflow-hidden">
+      <!-- Cuadrícula animada de fondo -->
+      <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
+        <div class="absolute inset-0 w-full h-full plano-fino" style="
+          background-image:
+            linear-gradient(to right, rgba(31,111,84,0.22) 2px, transparent 2px),
+            linear-gradient(to bottom, rgba(31,111,84,0.22) 2px, transparent 2px);
+          background-size: 44px 44px;
+          opacity: 1;
+        "></div>
+        <div class="absolute inset-0 w-full h-full plano-grueso" style="
+          background-image:
+            linear-gradient(to right, rgba(31,111,84,0.14) 2px, transparent 2px),
+            linear-gradient(to bottom, rgba(31,111,84,0.14) 2px, transparent 2px);
+          background-size: 132px 132px;
+          opacity: 1;
+        "></div>
+      </div>
+
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="relative grid grid-cols-1 md:grid-cols-5 gap-8">
+
+          <!-- Línea conectora -->
+          <div class="hidden md:block absolute left-1/2 top-14 bottom-14 w-0.5 bg-brandBorder -z-10 steps-line"></div>
+
+          <div data-reveal class="bg-white p-8 rounded-2xl border border-brandBorder hover-card text-center flex flex-col items-center relative z-10">
+            <div class="w-12 h-12 rounded-full bg-brandPrimary text-white text-lg font-bold flex items-center justify-center mb-4 shadow-sm border border-brandPrimary">1</div>
+            <h3 class="text-sm font-semibold text-brandPrimary mb-2">Elige tu servicio</h3>
+            <p class="text-[12px] text-brandSecondary leading-relaxed">
+              Revit, AutoCAD, SketchUp o capacitación técnica.
+            </p>
+          </div>
+
+          <div data-reveal class="bg-white p-8 rounded-2xl border border-brandBorder hover-card text-center flex flex-col items-center relative z-10">
+            <div class="w-12 h-12 rounded-full border-2 border-brandPrimary text-brandPrimary text-lg font-bold flex items-center justify-center mb-4">2</div>
+            <h3 class="text-sm font-semibold text-brandPrimary mb-2">Confirma tu interés</h3>
+            <p class="text-[12px] text-brandSecondary leading-relaxed">
+              Te mostramos un resumen detallado antes de enviar.
+            </p>
+          </div>
+
+          <div data-reveal class="bg-white p-8 rounded-2xl border border-brandBorder hover-card text-center flex flex-col items-center relative z-10">
+            <div class="w-12 h-12 rounded-full border-2 border-brandPrimary text-brandPrimary text-lg font-bold flex items-center justify-center mb-4">3</div>
+            <h3 class="text-sm font-semibold text-brandPrimary mb-2">Completa datos</h3>
+            <p class="text-[12px] text-brandSecondary leading-relaxed">
+              Indica tus tiempos de entrega y especificaciones.
+            </p>
+          </div>
+
+          <div data-reveal class="bg-white p-8 rounded-2xl border border-brandBorder hover-card text-center flex flex-col items-center relative z-10">
+            <div class="w-12 h-12 rounded-full bg-brandAccent text-white text-lg font-bold flex items-center justify-center mb-4 shadow-sm">4</div>
+            <h3 class="text-sm font-semibold text-brandPrimary mb-2">Envía a WhatsApp</h3>
+            <p class="text-[12px] text-brandSecondary leading-relaxed">
+              Se genera tu mensaje formateado y listo para enviar.
+            </p>
+          </div>
+
+          <div data-reveal class="bg-white p-8 rounded-2xl border border-brandBorder hover-card text-center flex flex-col items-center relative z-10">
+            <div class="w-12 h-12 rounded-full border-2 border-brandPrimary text-brandPrimary text-lg font-bold flex items-center justify-center mb-4">5</div>
+            <h3 class="text-sm font-semibold text-brandPrimary mb-2">Recibe seguimiento</h3>
+            <p class="text-[12px] text-brandSecondary leading-relaxed">
+              Registramos tu propuesta y coordinamos de inmediato.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Qué puedes esperar -->
+        <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div data-reveal class="bg-white p-8 rounded-2xl border border-brandBorder hover-card">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="w-10 h-10 rounded-lg bg-brandPrimary text-white flex items-center justify-center"><i class="fa-solid fa-list-check"></i></span>
+              <h3 class="text-base font-semibold text-brandPrimary">Alcance claro</h3>
+            </div>
+            <p class="text-[12px] text-brandSecondary leading-relaxed">
+              Definimos juntos entregables, formato y nivel de detalle antes de empezar.
+            </p>
+          </div>
+
+          <div data-reveal class="bg-white p-8 rounded-2xl border border-brandBorder hover-card">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="w-10 h-10 rounded-lg bg-brandPrimary text-white flex items-center justify-center"><i class="fa-solid fa-clock"></i></span>
+              <h3 class="text-base font-semibold text-brandPrimary">Plazos coordinados</h3>
+            </div>
+            <p class="text-[12px] text-brandSecondary leading-relaxed">
+              Acordamos la fecha de entrega según la urgencia de tu proyecto.
+            </p>
+          </div>
+
+          <div data-reveal class="bg-white p-8 rounded-2xl border border-brandBorder hover-card">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="w-10 h-10 rounded-lg bg-brandGreen text-white flex items-center justify-center"><i class="fa-brands fa-whatsapp"></i></span>
+              <h3 class="text-base font-semibold text-brandPrimary">Contacto directo</h3>
+            </div>
+            <p class="text-[12px] text-brandSecondary leading-relaxed">
+              Hablas siempre con el estudio, sin intermediarios ni formularios eternos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CTA CLARO ==================== -->
+    <section class="py-24 bg-brandBg border-b border-brandBorder">
+      <div class="max-w-4xl mx-auto px-4 text-center" data-reveal>
+        <p class="text-[11px] font-bold tracking-widest text-brandAccent uppercase">Paso 1</p>
+        <h2 class="mt-4 text-3xl sm:text-4xl font-semibold text-brandPrimary leading-tight">Empieza eligiendo tu servicio</h2>
+        <p class="mt-5 max-w-2xl mx-auto text-brandSecondary text-sm leading-relaxed">
+          Revisa las opciones de modelado y capacitación, y solicita la que necesitas en menos de un minuto.
+        </p>
+        <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="servicios.html" class="w-full sm:w-auto px-8 py-4 rounded-xl border border-brandBorder text-brandPrimary font-semibold hover:bg-brandAccent hover:text-white transition-colors text-center">
+            Ver servicios
+          </a>
+          <button onclick="selectServiceModal('Modelado en Revit')" class="w-full sm:w-auto px-8 py-4 rounded-xl border border-brandBorder text-brandPrimary font-semibold hover:bg-brandBg transition-colors">
+            Solicitar ahora
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER (COMPARTIDO) ==================== -->
+  <div id="site-footer"></div>
+
+  <div id="site-widgets"></div>
+
+  <script src="js/widgets.js"></script>
+  <script src="js/layout-loader.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Micky Arquitectos | Arquitectura e Ingeniería Civil</title>
+  <meta name="description" content="Estudio técnico de arquitectura e ingeniería civil: modelado BIM en Revit, planos en AutoCAD, visualización 3D en SketchUp y capacitación técnica." />
+  <meta property="og:title" content="Micky Arquitectos | Arquitectura e Ingeniería Civil">
+  <meta property="og:description" content="Modelado BIM en Revit, planos en AutoCAD, visualización 3D en SketchUp y capacitación técnica.">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/tailwind-config.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body class="bg-brandBg text-brandPrimary font-sans antialiased">
+
+  <!-- ==================== HEADER / NAVBAR (COMPARTIDO) ==================== -->
+  <div id="site-header"></div>
+
+  <main>
+    <!-- ==================== HERO CLARO ==================== -->
+    <header class="relative overflow-hidden border-b border-brandBorder" style="background: linear-gradient(135deg, #F4F2ED 0%, #FAFAF7 45%, #EDF2EE 100%);">
+      <!-- Patrón base de blueprint -->
+      <div class="pointer-events-none absolute inset-0 bg-blueprint opacity-60"></div>
+      <!-- Glow radial de profundidad -->
+      <div class="pointer-events-none absolute inset-0 hero-radial-glow"></div>
+      <!-- Cuadrícula fina — líneas 2px verdes, flujo rápido -->
+      <div class="absolute inset-0 z-[1] pointer-events-none plano-fino" style="
+        background-image:
+          linear-gradient(to right, rgba(31,111,84,0.22) 2px, transparent 2px),
+          linear-gradient(to bottom, rgba(31,111,84,0.22) 2px, transparent 2px);
+        background-size: 44px 44px;
+        opacity: 1;
+      "></div>
+      <!-- Cuadrícula gruesa — líneas 2px más marcadas, flujo lento opuesto -->
+      <div class="absolute inset-0 z-[1] pointer-events-none plano-grueso" style="
+        background-image:
+          linear-gradient(to right, rgba(31,111,84,0.14) 2px, transparent 2px),
+          linear-gradient(to bottom, rgba(31,111,84,0.14) 2px, transparent 2px);
+        background-size: 132px 132px;
+        opacity: 1;
+      "></div>
+
+      <div class="relative z-[2] max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:py-32 grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+
+        <!-- Texto -->
+        <div class="lg:col-span-7">
+          <div class="inline-flex items-center gap-2 bg-white border border-brandBorder px-4 py-2 rounded-full text-[10px] font-bold tracking-widest text-brandSecondary uppercase">
+            MICKY ARQUITECTOS · ESTUDIO TÉCNICO
+          </div>
+
+          <h1 class="mt-5 text-4xl sm:text-5xl lg:text-6xl font-semibold text-brandPrimary tracking-tight leading-tight">
+            Tu proyecto, listo para <span class="border-b-2 border-brandAccent pb-[2px]">entregar</span>
+          </h1>
+
+          <p class="mt-5 text-lg text-brandSecondary max-w-2xl leading-relaxed">
+            Modelado BIM en <strong class="text-brandPrimary">Revit</strong>, planos en <strong class="text-brandPrimary">AutoCAD</strong>, visualización 3D en <strong class="text-brandPrimary">SketchUp</strong> y capacitación técnica. Entregas puntuales y atención directa.
+          </p>
+
+          <form onsubmit="quoteFromHero(event)" class="mt-8 max-w-xl">
+            <div class="flex flex-col sm:flex-row gap-2 rounded-xl bg-white p-2 shadow-sm border border-brandBorder">
+              <label class="flex flex-1 items-center gap-3 px-4 py-3">
+                <i class="fa-solid fa-compass-drafting text-brandSecondary"></i>
+                <span class="sr-only">Servicio que necesitas</span>
+                <select id="heroService" class="w-full bg-transparent text-sm font-semibold text-brandPrimary focus:outline-none cursor-pointer">
+                  <option>Modelado en Revit</option>
+                  <option>Modelado en AutoCAD</option>
+                  <option>Modelado en SketchUp</option>
+                  <option>Capacitación Técnica</option>
+                </select>
+              </label>
+              <button type="submit" class="px-6 py-3 rounded-xl bg-brandAccent text-white text-sm font-bold hover:bg-brandPrimary transition-colors flex items-center justify-center gap-2">
+                Cotizar ahora
+                <i class="fa-solid fa-arrow-right text-xs"></i>
+              </button>
+            </div>
+            <p class="mt-3 text-[12px] text-brandSecondary flex items-center gap-1.5">
+              <i class="fa-solid fa-bolt text-brandAccent"></i> Respuesta el mismo día por WhatsApp · Sin compromiso
+            </p>
+          </form>
+
+          <div class="mt-10 flex flex-wrap gap-6 text-sm text-brandSecondary">
+            <span class="inline-flex items-center gap-2"><i class="fa-solid fa-circle-check text-brandAccent"></i> Entregas 2D y 3D</span>
+            <span class="inline-flex items-center gap-2"><i class="fa-solid fa-circle-check text-brandAccent"></i> Modelos BIM paramétricos</span>
+            <span class="inline-flex items-center gap-2"><i class="fa-solid fa-circle-check text-brandAccent"></i> Asesoría 1 a 1</span>
+          </div>
+        </div>
+
+        <!-- Imagen del modelo + casillas -->
+        <div class="lg:col-span-5" data-reveal>
+          <div class="flex flex-col items-start gap-6">
+
+            <!-- Imagen con marco blanco -->
+            <div class="w-full rounded-3xl bg-white p-2 shadow-md">
+              <img src="imagenes/plataforma_revit.avif" alt="Modelo BIM Revit" class="w-full h-auto rounded-2xl object-cover" loading="lazy">
+            </div>
+
+            <!-- Casillas info mejoradas -->
+            <div class="flex flex-col gap-3 pl-4 sm:pl-6">
+
+              <!-- Casilla 48h -->
+              <div class="info-box w-56">
+                <div class="w-9 h-9 rounded-xl bg-brandAccent/10 flex items-center justify-center shrink-0">
+                  <i class="fa-solid fa-bolt text-brandAccent text-sm"></i>
+                </div>
+                <div class="leading-tight">
+                  <p class="text-sm font-bold text-brandPrimary">48h</p>
+                  <p class="text-[11px] text-brandSecondary">Respuesta rápida</p>
+                </div>
+              </div>
+
+              <!-- Casilla Revit -->
+              <div class="info-box w-56">
+                <span class="w-9 h-9 shrink-0 rounded-xl bg-blue-600 text-white text-sm font-bold flex items-center justify-center shadow-sm" style="box-shadow: 0 2px 8px rgba(37,99,235,0.35);">R</span>
+                <div class="leading-tight">
+                  <p class="text-sm font-bold text-brandPrimary">Revit</p>
+                  <p class="text-[11px] text-brandSecondary">BIM 3D</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </header>
+
+    <!-- Franja de herramientas con logos reales -->
+    <div class="bg-white border-b border-brandBorder py-16 sm:py-20">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+
+        <p class="text-xs sm:text-sm font-bold tracking-[0.25em] text-brandSecondary uppercase">
+          Especialistas en
+        </p>
+
+        <!-- Matriz: 3 arriba, 2 centradas abajo -->
+        <div class="mt-10 grid grid-cols-2 sm:grid-cols-6 gap-x-6 gap-y-10 sm:gap-y-12 items-center justify-items-center">
+
+          <!-- Fila 1 -->
+          <span class="sm:col-span-2 flex items-center gap-4 text-2xl sm:text-3xl font-semibold text-brandPrimary hover:text-brandAccent transition-colors">
+            <img src="imagenes/logo_revit.jpg" alt="Revit" class="glow-tile w-12 h-12 sm:w-14 sm:h-14 object-contain" style="--glow: rgba(24, 90, 189, 0.55);" loading="lazy">
+            Revit
+          </span>
+
+          <span class="sm:col-span-2 flex items-center gap-4 text-2xl sm:text-3xl font-semibold text-brandPrimary hover:text-brandAccent transition-colors">
+            <img src="imagenes/logo_autocad.jpg" alt="AutoCAD" class="glow-tile w-12 h-12 sm:w-14 sm:h-14 object-contain" style="--glow: rgba(196, 43, 43, 0.5); animation-delay: 0.6s;" loading="lazy">
+            AutoCAD
+          </span>
+
+          <span class="sm:col-span-2 flex items-center gap-4 text-2xl sm:text-3xl font-semibold text-brandPrimary hover:text-brandAccent transition-colors">
+            <img src="imagenes/logo_sketchup.png" alt="SketchUp" class="glow-tile w-12 h-12 sm:w-14 sm:h-14 object-contain" style="--glow: rgba(20, 55, 110, 0.5); animation-delay: 1.2s;" loading="lazy">
+            SketchUp
+          </span>
+
+          <!-- Fila 2 -->
+          <span class="sm:col-span-2 sm:col-start-2 flex items-center gap-4 text-2xl sm:text-3xl font-semibold text-brandPrimary hover:text-brandAccent transition-colors">
+            <span class="glow-tile w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center shrink-0" style="--glow: rgba(31, 111, 84, 0.5); animation-delay: 0.3s;">
+              <i class="fa-solid fa-layer-group text-2xl sm:text-3xl text-brandAccent" aria-hidden="true"></i>
+            </span>
+            BIM
+          </span>
+
+          <span class="sm:col-span-2 flex items-center gap-4 text-2xl sm:text-3xl font-semibold text-brandPrimary hover:text-brandAccent transition-colors">
+            <span class="glow-tile w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center shrink-0" style="--glow: rgba(107, 107, 102, 0.45); animation-delay: 0.9s;">
+              <i class="fa-solid fa-file-lines text-2xl sm:text-3xl text-brandSecondary" aria-hidden="true"></i>
+            </span>
+            Planos ejecutivos
+          </span>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== PROYECTOS / SECCIONES ==================== -->
+    <section class="relative py-24 overflow-hidden border-b border-brandBorder" style="background: linear-gradient(180deg, #FAFAF7 0%, #EDF3EE 100%);">
+      <div class="pointer-events-none absolute inset-0 bg-blueprint-light opacity-30"></div>
+      <div class="absolute inset-0 pointer-events-none plano-fino" style="
+        background-image:
+          linear-gradient(to right, rgba(31,111,84,0.18) 2px, transparent 2px),
+          linear-gradient(to bottom, rgba(31,111,84,0.18) 2px, transparent 2px);
+        background-size: 44px 44px;
+        opacity: 1;
+      "></div>
+      <div class="absolute inset-0 pointer-events-none plano-grueso" style="
+        background-image:
+          linear-gradient(to right, rgba(31,111,84,0.11) 2px, transparent 2px),
+          linear-gradient(to bottom, rgba(31,111,84,0.11) 2px, transparent 2px);
+        background-size: 132px 132px;
+        opacity: 1;
+      "></div>
+      <div class="relative z-[2] max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="text-center max-w-3xl mx-auto mb-16" data-reveal>
+          <p class="text-xs font-bold tracking-widest text-brandSecondary uppercase">Nuestro trabajo</p>
+          <h2 class="text-3xl sm:text-4xl font-semibold text-brandPrimary mt-3">Cada sección, en su propia página</h2>
+          <p class="mt-4 text-brandSecondary text-base">
+            Navega directo a lo que necesitas: conoce el estudio, revisa los servicios o descubre cómo trabajamos paso a paso.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+          <a href="nosotros.html" data-reveal class="group bg-white p-10 rounded-2xl border border-brandBorder feature-card flex flex-col">
+            <div class="feature-card-icon w-14 h-14 text-white rounded-xl flex items-center justify-center text-2xl mb-6">
+              <i class="fa-solid fa-users"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-brandPrimary mb-3">Nosotros</h3>
+            <p class="text-brandSecondary text-sm leading-relaxed flex-1">
+              Conoce nuestra misión, visión y el valor que aportamos en cada proyecto de arquitectura e ingeniería.
+            </p>
+            <span class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-brandAccent group-hover:gap-3 transition-all">
+              Conócenos <i class="fa-solid fa-arrow-right text-xs"></i>
+            </span>
+          </a>
+
+          <a href="servicios.html" data-reveal class="group bg-[#F3F7F4] p-10 rounded-2xl border border-[#D9E5DD] feature-card flex flex-col">
+            <div class="feature-card-icon w-14 h-14 text-white rounded-xl flex items-center justify-center text-2xl mb-6">
+              <i class="fa-solid fa-compass-drafting"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-brandPrimary mb-3">Servicios</h3>
+            <p class="text-brandSecondary text-sm leading-relaxed flex-1">
+              Modelado en Revit, AutoCAD y SketchUp, más capacitación técnica personalizada. Solicita en un minuto.
+            </p>
+            <span class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-brandAccent group-hover:gap-3 transition-all">
+              Ver servicios <i class="fa-solid fa-arrow-right text-xs"></i>
+            </span>
+          </a>
+
+          <a href="flujo.html" data-reveal class="group bg-white p-10 rounded-2xl border border-brandBorder feature-card flex flex-col">
+            <div class="feature-card-icon w-14 h-14 text-white rounded-xl flex items-center justify-center text-2xl mb-6">
+              <i class="fa-solid fa-route"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-brandPrimary mb-3">Cómo funciona</h3>
+            <p class="text-brandSecondary text-sm leading-relaxed flex-1">
+              Un proceso claro de cinco pasos, desde la elección del servicio hasta el seguimiento de tu entrega.
+            </p>
+            <span class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-brandAccent group-hover:gap-3 transition-all">
+              Ver proceso <i class="fa-solid fa-arrow-right text-xs"></i>
+            </span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CTA FINAL (ÚNICA FRANJA OSCURA) ==================== -->
+    <section class="relative overflow-hidden bg-brandPrimary text-white py-24 border-t border-brandPrimary">
+      <div class="pointer-events-none absolute inset-0 bg-blueprint opacity-20"></div>
+      <!-- Cuadrícula animada en blanco para fondo oscuro -->
+      <div class="absolute inset-0 pointer-events-none plano-fino" style="
+        background-image:
+          linear-gradient(to right, rgba(255,255,255,0.08) 2px, transparent 2px),
+          linear-gradient(to bottom, rgba(255,255,255,0.08) 2px, transparent 2px);
+        background-size: 44px 44px;
+        opacity: 1;
+      "></div>
+      <div class="absolute inset-0 pointer-events-none plano-grueso" style="
+        background-image:
+          linear-gradient(to right, rgba(255,255,255,0.05) 2px, transparent 2px),
+          linear-gradient(to bottom, rgba(255,255,255,0.05) 2px, transparent 2px);
+        background-size: 132px 132px;
+        opacity: 1;
+      "></div>
+
+      <div class="relative z-[2] max-w-4xl mx-auto px-4 text-center" data-reveal>
+        <p class="text-[11px] font-bold tracking-widest text-brandGreen uppercase">Empieza hoy</p>
+        <h2 class="mt-4 text-3xl sm:text-4xl font-semibold text-white leading-tight">Tu proyecto merece planos impecables</h2>
+        <p class="mt-5 text-brandBorder/80 max-w-2xl mx-auto text-sm">
+          Cuéntanos qué necesitas y recibe una propuesta clara por WhatsApp. Sin intermediarios, sin complicaciones.
+        </p>
+        <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <button onclick="selectServiceModal('Modelado en Revit')" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-brandGreen text-white text-sm font-bold hover:bg-brandPrimary transition-colors flex items-center justify-center gap-2 shadow-lg shadow-black/20">
+            <i class="fa-brands fa-whatsapp text-lg"></i> Cotizar por WhatsApp
+          </button>
+          <a href="servicios.html" class="w-full sm:w-auto px-8 py-4 rounded-xl border border-white/20 text-sm font-semibold hover:bg-white/10 transition-colors text-center text-white">
+            Ver servicios
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER (COMPARTIDO) ==================== -->
+  <div id="site-footer"></div>
+
+  <div id="site-widgets"></div>
+
+  <script src="js/widgets.js"></script>
+  <script src="js/layout-loader.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

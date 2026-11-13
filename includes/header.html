@@ -1,0 +1,58 @@
+<!-- ==================== HEADER / NAVBAR (COMPARTIDO) ==================== -->
+<nav id="mainNav" class="sticky top-0 z-50 backdrop-blur-lg border-b border-brandBorder transition-all duration-300"
+  style="background: linear-gradient(to bottom, rgba(255,255,255,0.99), rgba(252,251,249,0.98)); box-shadow: 0 1px 0 rgba(31,31,31,0.07), 0 4px 24px rgba(31,31,31,0.05);">
+
+  <!-- Franja de acento con shimmer -->
+  <div class="nav-accent-strip"></div>
+
+  <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 h-[74px] flex items-center justify-between gap-4">
+
+    <!-- ZONA IZQUIERDA — Logo + separador -->
+    <div class="flex items-center gap-5 shrink-0">
+      <a href="index.html" class="group flex items-center">
+        <img src="imagenes/logo_micky_arquitectos_horizontal.jpg" alt="Micky Arquitectos"
+          class="h-9 w-auto object-contain group-hover:opacity-80 transition-opacity duration-200"
+          onerror="this.onerror=null;this.src='imagenes/logo_micky_arquitectos_solo.jpeg';this.className='h-9 w-9 object-cover rounded-lg border border-brandBorder';">
+      </a>
+      <!-- Separador vertical desktop -->
+      <div class="nav-sep hidden md:block"></div>
+    </div>
+
+    <!-- ZONA CENTRAL — Links en pill container -->
+    <div class="hidden md:flex flex-1 items-center justify-center">
+      <div class="nav-links-container font-medium text-sm">
+        <a href="index.html" class="nav-link text-brandPrimary hover:text-brandAccent">Inicio</a>
+        <a href="nosotros.html" class="nav-link text-brandPrimary hover:text-brandAccent">Nosotros</a>
+        <a href="servicios.html" class="nav-link text-brandPrimary hover:text-brandAccent">Servicios</a>
+        <a href="flujo.html" class="nav-link text-brandPrimary hover:text-brandAccent">Cómo funciona</a>
+      </div>
+    </div>
+
+    <!-- ZONA DERECHA — Separador + CTA + hamburguesa -->
+    <div class="flex items-center gap-4 shrink-0">
+      <div class="nav-sep hidden md:block"></div>
+      <a href="servicios.html" class="nav-cta hidden md:inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold text-white rounded-xl">
+        <i class="fa-brands fa-whatsapp text-base"></i>Cotizar
+      </a>
+      <button id="mobileMenuBtn" onclick="toggleMobileMenu()"
+        class="md:hidden p-2.5 text-brandPrimary hover:bg-brandBorder/60 rounded-lg transition-colors focus:outline-none"
+        aria-label="Abrir menú">
+        <i class="fa-solid fa-bars text-lg"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Menú mobile -->
+  <div id="mobileMenu" class="hidden md:hidden border-t border-brandBorder px-4 pt-3 pb-5 space-y-1"
+    style="background: rgba(252,251,249,0.98); backdrop-filter: blur(12px);">
+    <a href="index.html" class="nav-link block text-brandPrimary font-medium">Inicio</a>
+    <a href="nosotros.html" class="nav-link block text-brandPrimary font-medium">Nosotros</a>
+    <a href="servicios.html" class="nav-link block text-brandPrimary font-medium">Servicios</a>
+    <a href="flujo.html" class="nav-link block text-brandPrimary font-medium">Cómo funciona</a>
+    <div class="pt-3 border-t border-brandBorder mt-3">
+      <a href="servicios.html" class="nav-cta w-full py-3 text-center text-sm font-semibold text-white rounded-xl flex items-center justify-center gap-2">
+        <i class="fa-brands fa-whatsapp text-base"></i>Cotizar ahora
+      </a>
+    </div>
+  </div>
+</nav>
