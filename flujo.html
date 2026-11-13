@@ -22,48 +22,48 @@
 
   <main>
     <!-- ==================== ENCABEZADO CLARO ==================== -->
-    <header class="relative bg-brandBorder border-b border-brandBorder p-2 overflow-hidden">
-      <div class="pointer-events-none absolute inset-0 bg-blueprint opacity-40"></div>
+    <header class="relative bg-brandBg border-b border-brandBorder p-2 overflow-hidden">
       <!-- Imagen de fondo suave para la franja de "Cómo funciona" -->
       <div class="absolute inset-0 z-0">
-        <img src="imagenes/imagen_flujo.jpg" alt="Cómo funciona" class="w-full h-full object-cover opacity-15" style="object-position: center 32%;">
+        <img src="imagenes/imagen_flujo.jpg" alt="Cómo funciona" class="w-full h-full object-cover" style="object-position: center 32%;">
+        <div class="absolute inset-0 bg-gradient-to-r from-brandBg via-brandBg/90 to-brandBg/60 md:to-brandBg/10"></div>
       </div>
 
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
-        <nav class="text-[10px] font-bold tracking-widest uppercase text-brandSecondary" aria-label="Ruta de navegación">
+        <nav class="text-xs sm:text-sm font-bold tracking-widest uppercase text-brandPrimary/80 texto-legible" aria-label="Ruta de navegación">
           <a href="index.html" class="hover:text-brandPrimary transition-colors">Inicio</a>
-          <span class="mx-2 text-brandBorder/40">/</span>
+          <span class="mx-2 text-brandPrimary/50">/</span>
           <span class="text-brandAccent">Cómo funciona</span>
         </nav>
-        <h1 class="mt-4 text-4xl sm:text-5xl font-semibold text-brandPrimary tracking-tight">Solicita en simples pasos</h1>
-        <p class="mt-4 max-w-2xl text-brandSecondary text-lg leading-relaxed">
+        <h1 class="mt-4 text-4xl sm:text-5xl font-semibold text-brandPrimary tracking-tight texto-legible">Solicita en simples pasos</h1>
+        <p class="mt-4 max-w-2xl text-brandPrimary/90 font-medium text-lg sm:text-xl leading-relaxed texto-legible">
           Diseñamos un flujo ágil para responder a tus entregas universitarias o requerimientos profesionales sin complicaciones.
         </p>
       </div>
     </header>
 
     <!-- ==================== PASOS CON LÍNEA CONECTORA ==================== -->
-    <section class="relative py-24 bg-white border-b border-brandBorder overflow-hidden">
+    <section class="relative py-24 bg-brandBg border-b border-brandBorder overflow-hidden">
       <!-- Cuadrícula animada de fondo -->
       <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
         <div class="absolute inset-0 w-full h-full plano-fino" style="
           background-image:
-            linear-gradient(to right, rgba(31,111,84,0.22) 2px, transparent 2px),
-            linear-gradient(to bottom, rgba(31,111,84,0.22) 2px, transparent 2px);
+            linear-gradient(to right, rgba(31,111,84,0.10) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(31,111,84,0.10) 1px, transparent 1px);
           background-size: 44px 44px;
           opacity: 1;
         "></div>
         <div class="absolute inset-0 w-full h-full plano-grueso" style="
           background-image:
-            linear-gradient(to right, rgba(31,111,84,0.14) 2px, transparent 2px),
-            linear-gradient(to bottom, rgba(31,111,84,0.14) 2px, transparent 2px);
+            linear-gradient(to right, rgba(31,111,84,0.08) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(31,111,84,0.08) 1px, transparent 1px);
           background-size: 132px 132px;
           opacity: 1;
         "></div>
       </div>
 
       <!-- CAD overlay decorativo -->
-      <svg class="cad-overlay" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 700" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+      <svg class="cad-overlay opacity-30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 700" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
         <g fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.9"><path d="M20 58 L20 20 L58 20"/><circle cx="20" cy="20" r="2.5" fill="currentColor" stroke="none"/><path d="M1420 58 L1420 20 L1382 20"/><circle cx="1420" cy="20" r="2.5" fill="currentColor" stroke="none"/><path d="M20 642 L20 680 L58 680"/><circle cx="20" cy="680" r="2.5" fill="currentColor" stroke="none"/><path d="M1420 642 L1420 680 L1382 680"/><circle cx="1420" cy="680" r="2.5" fill="currentColor" stroke="none"/></g>
         <g fill="currentColor" font-family="'Courier New',monospace" font-size="8.5" opacity="0.75"><text x="64" y="24">X:0.00  Y:0.00</text><text x="1272" y="24">ESCALA  1:100</text><text x="64" y="677">LAYER: ARQ-01</text><text x="1232" y="677">PLANTA GENERAL</text></g>
         <g fill="none" stroke="currentColor" stroke-width="1" opacity="0.7"><line x1="104" y1="47" x2="460" y2="47"/><line x1="104" y1="41" x2="104" y2="53"/><line x1="460" y1="41" x2="460" y2="53"/><polyline points="114,44 104,47 114,50"/><polyline points="450,44 460,47 450,50"/></g>
@@ -87,105 +87,128 @@
         <g fill="currentColor" font-family="'Courier New',monospace" font-size="9" font-weight="bold" text-anchor="middle" opacity="0.5"><text x="176" y="82">A</text><text x="352" y="82">B</text><text x="528" y="82">C</text><text x="704" y="82">D</text><text x="880" y="82">E</text><text x="1056" y="82">F</text><text x="1232" y="82">G</text></g>
       </svg>
 
-      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="relative z-[2] max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        <div class="relative grid grid-cols-1 md:grid-cols-5 gap-8">
-
-          <!-- Línea conectora -->
-          <div class="hidden md:block absolute left-1/2 top-14 bottom-14 w-0.5 bg-brandBorder -z-10 steps-line"></div>
-
-          <div data-reveal class="bg-white p-8 rounded-2xl border border-brandBorder hover-card text-center flex flex-col items-center relative z-10">
-            <div class="w-12 h-12 rounded-full bg-brandPrimary text-white text-lg font-bold flex items-center justify-center mb-4 shadow-sm border border-brandPrimary">1</div>
-            <h3 class="text-sm font-semibold text-brandPrimary mb-2">Elige tu servicio</h3>
-            <p class="text-[12px] text-brandSecondary leading-relaxed">
-              Revit, AutoCAD, SketchUp o capacitación técnica.
-            </p>
-          </div>
-
-          <div data-reveal class="bg-white p-8 rounded-2xl border border-brandBorder hover-card text-center flex flex-col items-center relative z-10">
-            <div class="w-12 h-12 rounded-full border-2 border-brandPrimary text-brandPrimary text-lg font-bold flex items-center justify-center mb-4">2</div>
-            <h3 class="text-sm font-semibold text-brandPrimary mb-2">Confirma tu interés</h3>
-            <p class="text-[12px] text-brandSecondary leading-relaxed">
-              Te mostramos un resumen detallado antes de enviar.
-            </p>
-          </div>
-
-          <div data-reveal class="bg-white p-8 rounded-2xl border border-brandBorder hover-card text-center flex flex-col items-center relative z-10">
-            <div class="w-12 h-12 rounded-full border-2 border-brandPrimary text-brandPrimary text-lg font-bold flex items-center justify-center mb-4">3</div>
-            <h3 class="text-sm font-semibold text-brandPrimary mb-2">Completa datos</h3>
-            <p class="text-[12px] text-brandSecondary leading-relaxed">
-              Indica tus tiempos de entrega y especificaciones.
-            </p>
-          </div>
-
-          <div data-reveal class="bg-white p-8 rounded-2xl border border-brandBorder hover-card text-center flex flex-col items-center relative z-10">
-            <div class="w-12 h-12 rounded-full bg-brandAccent text-white text-lg font-bold flex items-center justify-center mb-4 shadow-sm">4</div>
-            <h3 class="text-sm font-semibold text-brandPrimary mb-2">Envía a WhatsApp</h3>
-            <p class="text-[12px] text-brandSecondary leading-relaxed">
-              Se genera tu mensaje formateado y listo para enviar.
-            </p>
-          </div>
-
-          <div data-reveal class="bg-white p-8 rounded-2xl border border-brandBorder hover-card text-center flex flex-col items-center relative z-10">
-            <div class="w-12 h-12 rounded-full border-2 border-brandPrimary text-brandPrimary text-lg font-bold flex items-center justify-center mb-4">5</div>
-            <h3 class="text-sm font-semibold text-brandPrimary mb-2">Recibe seguimiento</h3>
-            <p class="text-[12px] text-brandSecondary leading-relaxed">
-              Registramos tu propuesta y coordinamos de inmediato.
-            </p>
-          </div>
-
+        <!-- Encabezado de la sección -->
+        <div class="text-center max-w-2xl mx-auto mb-14" data-reveal>
+          <p class="text-sm sm:text-base font-bold tracking-widest text-brandAccent uppercase">Así de fácil</p>
+          <h2 class="mt-3 text-3xl sm:text-4xl font-semibold text-brandPrimary leading-tight">5 pasos, menos de 2 minutos</h2>
+          <p class="mt-4 text-brandPrimary/90 font-medium text-base sm:text-lg leading-relaxed">
+            Sin formularios largos ni llamadas: eliges, completas y nos escribes por WhatsApp.
+          </p>
         </div>
 
+        <!-- Pasos -->
+        <ol class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 lg:gap-8">
+
+          <li data-reveal class="relative bg-white p-7 rounded-2xl border border-brandBorder shadow-sm hover-card hover:shadow-xl transition-shadow text-center flex flex-col items-center">
+            <span class="absolute -top-4 left-1/2 -translate-x-1/2 w-9 h-9 rounded-full bg-brandAccent text-white text-base font-bold flex items-center justify-center shadow-md ring-4 ring-white">1</span>
+            <span class="mt-3 w-14 h-14 rounded-2xl bg-brandAccent/10 text-brandAccent text-2xl flex items-center justify-center mb-4"><i class="fa-solid fa-hand-pointer"></i></span>
+            <p class="text-[11px] font-bold tracking-widest text-brandAccent uppercase mb-1">Paso 1</p>
+            <h3 class="text-lg font-semibold text-brandPrimary mb-2">Elige tu servicio</h3>
+            <p class="text-sm text-brandPrimary/75 leading-relaxed">Revit, AutoCAD, SketchUp o capacitación técnica.</p>
+            <span class="hidden lg:flex absolute -right-8 top-1/2 -translate-y-1/2 z-10 w-8 h-8 rounded-full bg-white border border-brandBorder text-brandAccent items-center justify-center shadow-sm"><i class="fa-solid fa-arrow-right text-xs"></i></span>
+          </li>
+
+          <li data-reveal class="relative bg-white p-7 rounded-2xl border border-brandBorder shadow-sm hover-card hover:shadow-xl transition-shadow text-center flex flex-col items-center">
+            <span class="absolute -top-4 left-1/2 -translate-x-1/2 w-9 h-9 rounded-full bg-brandAccent text-white text-base font-bold flex items-center justify-center shadow-md ring-4 ring-white">2</span>
+            <span class="mt-3 w-14 h-14 rounded-2xl bg-brandAccent/10 text-brandAccent text-2xl flex items-center justify-center mb-4"><i class="fa-solid fa-eye"></i></span>
+            <p class="text-[11px] font-bold tracking-widest text-brandAccent uppercase mb-1">Paso 2</p>
+            <h3 class="text-lg font-semibold text-brandPrimary mb-2">Confirma tu interés</h3>
+            <p class="text-sm text-brandPrimary/75 leading-relaxed">Te mostramos un resumen detallado antes de enviar.</p>
+            <span class="hidden lg:flex absolute -right-8 top-1/2 -translate-y-1/2 z-10 w-8 h-8 rounded-full bg-white border border-brandBorder text-brandAccent items-center justify-center shadow-sm"><i class="fa-solid fa-arrow-right text-xs"></i></span>
+          </li>
+
+          <li data-reveal class="relative bg-white p-7 rounded-2xl border border-brandBorder shadow-sm hover-card hover:shadow-xl transition-shadow text-center flex flex-col items-center">
+            <span class="absolute -top-4 left-1/2 -translate-x-1/2 w-9 h-9 rounded-full bg-brandAccent text-white text-base font-bold flex items-center justify-center shadow-md ring-4 ring-white">3</span>
+            <span class="mt-3 w-14 h-14 rounded-2xl bg-brandAccent/10 text-brandAccent text-2xl flex items-center justify-center mb-4"><i class="fa-solid fa-pen-to-square"></i></span>
+            <p class="text-[11px] font-bold tracking-widest text-brandAccent uppercase mb-1">Paso 3</p>
+            <h3 class="text-lg font-semibold text-brandPrimary mb-2">Completa datos</h3>
+            <p class="text-sm text-brandPrimary/75 leading-relaxed">Indica tus tiempos de entrega y especificaciones.</p>
+            <span class="hidden lg:flex absolute -right-8 top-1/2 -translate-y-1/2 z-10 w-8 h-8 rounded-full bg-white border border-brandBorder text-brandAccent items-center justify-center shadow-sm"><i class="fa-solid fa-arrow-right text-xs"></i></span>
+          </li>
+
+          <li data-reveal class="relative bg-white p-7 rounded-2xl border border-brandBorder shadow-sm hover-card hover:shadow-xl transition-shadow text-center flex flex-col items-center">
+            <span class="absolute -top-4 left-1/2 -translate-x-1/2 w-9 h-9 rounded-full bg-brandAccent text-white text-base font-bold flex items-center justify-center shadow-md ring-4 ring-white">4</span>
+            <span class="mt-3 w-14 h-14 rounded-2xl bg-brandGreen/15 text-brandGreen text-3xl flex items-center justify-center mb-4"><i class="fa-brands fa-whatsapp"></i></span>
+            <p class="text-[11px] font-bold tracking-widest text-brandAccent uppercase mb-1">Paso 4</p>
+            <h3 class="text-lg font-semibold text-brandPrimary mb-2">Envía a WhatsApp</h3>
+            <p class="text-sm text-brandPrimary/75 leading-relaxed">Se genera tu mensaje formateado y listo para enviar.</p>
+            <span class="hidden lg:flex absolute -right-8 top-1/2 -translate-y-1/2 z-10 w-8 h-8 rounded-full bg-white border border-brandBorder text-brandAccent items-center justify-center shadow-sm"><i class="fa-solid fa-arrow-right text-xs"></i></span>
+          </li>
+
+          <li data-reveal class="relative bg-white p-7 rounded-2xl border-2 border-brandAccent shadow-md hover-card hover:shadow-xl transition-shadow text-center flex flex-col items-center sm:col-span-2 lg:col-span-1">
+            <span class="absolute -top-4 left-1/2 -translate-x-1/2 w-9 h-9 rounded-full bg-brandAccent text-white text-base font-bold flex items-center justify-center shadow-md ring-4 ring-white"><i class="fa-solid fa-check text-sm"></i></span>
+            <span class="mt-3 w-14 h-14 rounded-2xl bg-brandAccent text-white text-2xl flex items-center justify-center mb-4"><i class="fa-solid fa-handshake"></i></span>
+            <p class="text-[11px] font-bold tracking-widest text-brandAccent uppercase mb-1">Paso 5 · ¡Listo!</p>
+            <h3 class="text-lg font-semibold text-brandPrimary mb-2">Recibe seguimiento</h3>
+            <p class="text-sm text-brandPrimary/75 leading-relaxed">Registramos tu propuesta y coordinamos de inmediato.</p>
+          </li>
+
+        </ol>
+
         <!-- Qué puedes esperar -->
-        <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div data-reveal class="bg-white p-8 rounded-2xl border border-brandBorder hover-card">
-            <div class="flex items-center gap-3 mb-4">
-              <span class="w-10 h-10 rounded-lg bg-brandPrimary text-white flex items-center justify-center"><i class="fa-solid fa-list-check"></i></span>
-              <h3 class="text-base font-semibold text-brandPrimary">Alcance claro</h3>
-            </div>
-            <p class="text-[12px] text-brandSecondary leading-relaxed">
-              Definimos juntos entregables, formato y nivel de detalle antes de empezar.
-            </p>
+        <div class="mt-24 text-center max-w-2xl mx-auto mb-10" data-reveal>
+          <p class="text-sm sm:text-base font-bold tracking-widest text-brandAccent uppercase">Nuestro compromiso</p>
+          <h2 class="mt-3 text-2xl sm:text-3xl font-semibold text-brandPrimary leading-tight">Qué puedes esperar de nosotros</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+          <div data-reveal class="bg-white p-8 rounded-2xl border border-brandBorder shadow-sm hover-card hover:shadow-xl transition-shadow">
+            <span class="w-12 h-12 rounded-xl bg-brandAccent/10 text-brandAccent text-xl flex items-center justify-center mb-5"><i class="fa-solid fa-list-check"></i></span>
+            <h3 class="text-lg font-semibold text-brandPrimary mb-2">Alcance claro</h3>
+            <p class="text-[15px] text-brandPrimary/75 leading-relaxed">Definimos juntos entregables, formato y nivel de detalle antes de empezar.</p>
           </div>
 
-          <div data-reveal class="bg-white p-8 rounded-2xl border border-brandBorder hover-card">
-            <div class="flex items-center gap-3 mb-4">
-              <span class="w-10 h-10 rounded-lg bg-brandPrimary text-white flex items-center justify-center"><i class="fa-solid fa-clock"></i></span>
-              <h3 class="text-base font-semibold text-brandPrimary">Plazos coordinados</h3>
-            </div>
-            <p class="text-[12px] text-brandSecondary leading-relaxed">
-              Acordamos la fecha de entrega según la urgencia de tu proyecto.
-            </p>
+          <div data-reveal class="bg-white p-8 rounded-2xl border border-brandBorder shadow-sm hover-card hover:shadow-xl transition-shadow">
+            <span class="w-12 h-12 rounded-xl bg-brandAccent/10 text-brandAccent text-xl flex items-center justify-center mb-5"><i class="fa-solid fa-clock"></i></span>
+            <h3 class="text-lg font-semibold text-brandPrimary mb-2">Plazos coordinados</h3>
+            <p class="text-[15px] text-brandPrimary/75 leading-relaxed">Acordamos la fecha de entrega según la urgencia de tu proyecto.</p>
           </div>
 
-          <div data-reveal class="bg-white p-8 rounded-2xl border border-brandBorder hover-card">
-            <div class="flex items-center gap-3 mb-4">
-              <span class="w-10 h-10 rounded-lg bg-brandGreen text-white flex items-center justify-center"><i class="fa-brands fa-whatsapp"></i></span>
-              <h3 class="text-base font-semibold text-brandPrimary">Contacto directo</h3>
-            </div>
-            <p class="text-[12px] text-brandSecondary leading-relaxed">
-              Hablas siempre con el estudio, sin intermediarios ni formularios eternos.
-            </p>
+          <div data-reveal class="bg-white p-8 rounded-2xl border border-brandBorder shadow-sm hover-card hover:shadow-xl transition-shadow">
+            <span class="w-12 h-12 rounded-xl bg-brandGreen/15 text-brandGreen text-2xl flex items-center justify-center mb-5"><i class="fa-brands fa-whatsapp"></i></span>
+            <h3 class="text-lg font-semibold text-brandPrimary mb-2">Contacto directo</h3>
+            <p class="text-[15px] text-brandPrimary/75 leading-relaxed">Hablas siempre con el estudio, sin intermediarios ni formularios eternos.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ==================== CTA CLARO ==================== -->
-    <section class="py-24 bg-brandBg border-b border-brandBorder">
-      <div class="max-w-4xl mx-auto px-4 text-center" data-reveal>
-        <p class="text-[11px] font-bold tracking-widest text-brandAccent uppercase">Paso 1</p>
-        <h2 class="mt-4 text-3xl sm:text-4xl font-semibold text-brandPrimary leading-tight">Empieza eligiendo tu servicio</h2>
-        <p class="mt-5 max-w-2xl mx-auto text-brandSecondary text-sm leading-relaxed">
-          Revisa las opciones de modelado y capacitación, y solicita la que necesitas en menos de un minuto.
-        </p>
-        <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a href="servicios.html" class="w-full sm:w-auto px-8 py-4 rounded-xl border border-brandBorder text-brandPrimary font-semibold hover:bg-brandAccent hover:text-white transition-colors text-center">
-            Ver servicios
-          </a>
-          <button onclick="selectServiceModal('Modelado en Revit')" class="w-full sm:w-auto px-8 py-4 rounded-xl border border-brandBorder text-brandPrimary font-semibold hover:bg-brandBg transition-colors">
-            Solicitar ahora
-          </button>
+    <!-- ==================== CTA DESTACADO ==================== -->
+    <section class="relative overflow-hidden py-20 sm:py-28 bg-brandPrimary">
+      <!-- Cuadrícula decorativa -->
+      <div class="pointer-events-none absolute inset-0 opacity-[0.07]" aria-hidden="true" style="background-image: linear-gradient(to right, #fff 1px, transparent 1px), linear-gradient(to bottom, #fff 1px, transparent 1px); background-size: 44px 44px;"></div>
+      <div class="pointer-events-none absolute -left-32 -bottom-32 w-[28rem] h-[28rem] rounded-full bg-brandAccent/40 blur-3xl" aria-hidden="true"></div>
+      <div class="pointer-events-none absolute -right-32 -top-32 w-80 h-80 rounded-full bg-brandAccent/20 blur-3xl" aria-hidden="true"></div>
+
+      <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8" data-reveal>
+        <div>
+
+          <div class="relative grid grid-cols-1 lg:grid-cols-5 gap-10 items-center">
+            <div class="lg:col-span-3 text-center lg:text-left">
+              <span class="inline-flex items-center gap-2 rounded-full bg-white/10 border border-white/20 px-4 py-1.5 text-xs sm:text-sm font-bold tracking-widest text-brandGreen uppercase">
+                <i class="fa-solid fa-flag-checkered"></i> Empieza por el paso 1
+              </span>
+              <h2 class="mt-5 text-3xl sm:text-4xl lg:text-[2.6rem] font-semibold text-white leading-tight">Elige tu servicio y cotiza hoy mismo</h2>
+              <p class="mt-4 text-white/80 text-base sm:text-lg leading-relaxed max-w-xl mx-auto lg:mx-0">
+                Revisa las opciones de modelado y capacitación, y solicita la que necesitas en menos de un minuto.
+              </p>
+              <ul class="mt-6 flex flex-wrap justify-center lg:justify-start gap-x-6 gap-y-2 text-sm font-medium text-white/90">
+                <li class="inline-flex items-center gap-2"><i class="fa-solid fa-circle-check text-brandGreen"></i> Sin compromiso</li>
+                <li class="inline-flex items-center gap-2"><i class="fa-solid fa-circle-check text-brandGreen"></i> Respuesta el mismo día</li>
+              </ul>
+            </div>
+
+            <div class="lg:col-span-2 flex flex-col gap-4">
+              <button onclick="selectServiceModal('Modelado en Revit')" class="w-full inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-brandGreen text-white text-lg font-bold shadow-lg shadow-black/30 hover:brightness-110 transition">
+                <i class="fa-brands fa-whatsapp text-xl"></i> Solicitar ahora
+              </button>
+              <a href="servicios.html" class="w-full inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-white text-brandPrimary text-lg font-bold hover:bg-brandBg transition-colors">
+                Ver servicios <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>

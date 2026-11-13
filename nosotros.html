@@ -22,20 +22,20 @@
 
   <main>
     <!-- ==================== ENCABEZADO CLARO ==================== -->
-    <header class="relative bg-brandBorder border-b border-brandBorder overflow-hidden">
-      <div class="pointer-events-none absolute inset-0 bg-blueprint opacity-40"></div>
+    <header class="relative bg-brandBg border-b border-brandBorder overflow-hidden">
       <div class="absolute inset-0 z-0">
-        <img src="imagenes/imagen_quienes_somos.jpg" alt="Quiénes somos" class="w-full h-full object-cover opacity-15">
+        <img src="imagenes/imagen_quienes_somos.jpg" alt="Quiénes somos" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-r from-brandBg via-brandBg/90 to-brandBg/60 md:to-brandBg/10"></div>
       </div>
 
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
-        <nav class="text-[10px] font-bold tracking-widest uppercase text-brandSecondary" aria-label="Ruta de navegación">
+        <nav class="text-xs sm:text-sm font-bold tracking-widest uppercase text-brandPrimary/80 texto-legible" aria-label="Ruta de navegación">
           <a href="index.html" class="hover:text-brandPrimary transition-colors">Inicio</a>
-          <span class="mx-2 text-brandBorder/40">/</span>
+          <span class="mx-2 text-brandPrimary/50">/</span>
           <span class="text-brandAccent">Nosotros</span>
         </nav>
-        <h1 class="mt-4 text-4xl sm:text-5xl font-semibold text-brandPrimary tracking-tight">Quiénes somos</h1>
-        <p class="mt-4 max-w-2xl text-brandSecondary text-lg leading-relaxed">
+        <h1 class="mt-4 text-4xl sm:text-5xl font-semibold text-brandPrimary tracking-tight texto-legible">Quiénes somos</h1>
+        <p class="mt-4 max-w-2xl text-brandPrimary/90 font-medium text-lg sm:text-xl leading-relaxed texto-legible">
           Somos un estudio técnico enfocado en soluciones integrales de diseño, modelado BIM y capacitación especializada en software de arquitectura e ingeniería.
         </p>
       </div>
@@ -47,22 +47,22 @@
       <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
         <div class="absolute inset-0 w-full h-full plano-fino" style="
           background-image:
-            linear-gradient(to right, rgba(31,111,84,0.22) 2px, transparent 2px),
-            linear-gradient(to bottom, rgba(31,111,84,0.22) 2px, transparent 2px);
+            linear-gradient(to right, rgba(31,111,84,0.10) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(31,111,84,0.10) 1px, transparent 1px);
           background-size: 44px 44px;
           opacity: 1;
         "></div>
         <div class="absolute inset-0 w-full h-full plano-grueso" style="
           background-image:
-            linear-gradient(to right, rgba(31,111,84,0.14) 2px, transparent 2px),
-            linear-gradient(to bottom, rgba(31,111,84,0.14) 2px, transparent 2px);
+            linear-gradient(to right, rgba(31,111,84,0.08) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(31,111,84,0.08) 1px, transparent 1px);
           background-size: 132px 132px;
           opacity: 1;
         "></div>
       </div>
 
       <!-- CAD overlay decorativo -->
-      <svg class="cad-overlay" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 700" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+      <svg class="cad-overlay opacity-30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 700" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
         <g fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.9"><path d="M20 58 L20 20 L58 20"/><circle cx="20" cy="20" r="2.5" fill="currentColor" stroke="none"/><path d="M1420 58 L1420 20 L1382 20"/><circle cx="1420" cy="20" r="2.5" fill="currentColor" stroke="none"/><path d="M20 642 L20 680 L58 680"/><circle cx="20" cy="680" r="2.5" fill="currentColor" stroke="none"/><path d="M1420 642 L1420 680 L1382 680"/><circle cx="1420" cy="680" r="2.5" fill="currentColor" stroke="none"/></g>
         <g fill="currentColor" font-family="'Courier New',monospace" font-size="8.5" opacity="0.75"><text x="64" y="24">X:0.00  Y:0.00</text><text x="1272" y="24">ESCALA  1:100</text><text x="64" y="677">LAYER: ARQ-01</text><text x="1232" y="677">PLANTA GENERAL</text></g>
         <g fill="none" stroke="currentColor" stroke-width="1" opacity="0.7"><line x1="104" y1="47" x2="460" y2="47"/><line x1="104" y1="41" x2="104" y2="53"/><line x1="460" y1="41" x2="460" y2="53"/><polyline points="114,44 104,47 114,50"/><polyline points="450,44 460,47 450,50"/></g>
@@ -90,49 +90,49 @@
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 
-          <!-- Misión · Salvia -->
-          <div data-reveal class="bg-[#E6EADF] p-10 rounded-2xl border border-[#CBD3C0] border-t-4 border-t-[#5F7355] hover-card">
-            <div class="w-14 h-14 bg-[#5F7355] text-white rounded-xl flex items-center justify-center text-2xl mb-6 shadow-md">
+          <!-- Misión -->
+          <div data-reveal class="bg-white shadow-sm p-10 rounded-2xl border border-brandBorder border-t-4 border-t-brandAccent hover-card">
+            <div class="w-14 h-14 bg-brandAccent/10 text-brandAccent rounded-xl flex items-center justify-center text-2xl mb-6">
               <i class="fa-solid fa-bullseye"></i>
             </div>
-            <h2 class="text-xl font-semibold text-[#2F3A2A] mb-3">Misión</h2>
-            <p class="text-[#55604E] text-sm leading-relaxed">
+            <h2 class="text-xl font-semibold text-brandPrimary mb-3">Misión</h2>
+            <p class="text-brandPrimary/75 text-sm leading-relaxed">
               Brindar servicios especializados de diseño, modelado y formación con precisión técnica, puntualidad en las entregas y un trato totalmente personalizado para cada cliente.
             </p>
           </div>
 
-          <!-- Visión · Azul pizarra -->
-          <div data-reveal class="bg-[#E1E7EA] p-10 rounded-2xl border border-[#C2CDD3] border-t-4 border-t-[#4B6272] hover-card">
-            <div class="w-14 h-14 bg-[#4B6272] text-white rounded-xl flex items-center justify-center text-2xl mb-6 shadow-md">
+          <!-- Visión -->
+          <div data-reveal class="bg-white shadow-sm p-10 rounded-2xl border border-brandBorder border-t-4 border-t-brandAccent hover-card">
+            <div class="w-14 h-14 bg-brandAccent/10 text-brandAccent rounded-xl flex items-center justify-center text-2xl mb-6">
               <i class="fa-solid fa-eye"></i>
             </div>
-            <h2 class="text-xl font-semibold text-[#25323B] mb-3">Visión</h2>
-            <p class="text-[#4F5F69] text-sm leading-relaxed">
+            <h2 class="text-xl font-semibold text-brandPrimary mb-3">Visión</h2>
+            <p class="text-brandPrimary/75 text-sm leading-relaxed">
               Ser un referente nacional en desarrollo digital de arquitectura e ingeniería civil, destacando por la aplicación rigurosa de metodologías BIM y alta calidad gráfica.
             </p>
           </div>
 
-          <!-- Aporte de valor · Ocre -->
-          <div data-reveal class="bg-[#F0E5CF] p-10 rounded-2xl border border-[#DCCBA6] border-t-4 border-t-[#A9843F] hover-card">
-            <div class="w-14 h-14 bg-[#A9843F] text-white rounded-xl flex items-center justify-center text-2xl mb-6 shadow-md">
+          <!-- Aporte de valor -->
+          <div data-reveal class="bg-white shadow-sm p-10 rounded-2xl border border-brandBorder border-t-4 border-t-brandAccent hover-card">
+            <div class="w-14 h-14 bg-brandAccent/10 text-brandAccent rounded-xl flex items-center justify-center text-2xl mb-6">
               <i class="fa-solid fa-gem"></i>
             </div>
-            <h2 class="text-xl font-semibold text-[#3E3017] mb-3">Aporte de valor</h2>
-            <ul class="space-y-3 text-[#6B5A38] text-sm">
+            <h2 class="text-xl font-semibold text-brandPrimary mb-3">Aporte de valor</h2>
+            <ul class="space-y-3 text-brandPrimary/75 text-sm">
               <li class="flex items-start gap-3">
-                <span class="mt-0.5 w-5 h-5 shrink-0 rounded-full bg-[#A9843F] text-white flex items-center justify-center text-[10px]">
+                <span class="mt-0.5 w-5 h-5 shrink-0 rounded-full bg-brandAccent text-white flex items-center justify-center text-[10px]">
                   <i class="fa-solid fa-check"></i>
                 </span>
                 <span class="text-sm">Modelos BIM paramétricos personalizables</span>
               </li>
               <li class="flex items-start gap-3">
-                <span class="mt-0.5 w-5 h-5 shrink-0 rounded-full bg-[#A9843F] text-white flex items-center justify-center text-[10px]">
+                <span class="mt-0.5 w-5 h-5 shrink-0 rounded-full bg-brandAccent text-white flex items-center justify-center text-[10px]">
                   <i class="fa-solid fa-check"></i>
                 </span>
                 <span class="text-sm">Planos 2D y 3D listos para sustentar y entregar</span>
               </li>
               <li class="flex items-start gap-3">
-                <span class="mt-0.5 w-5 h-5 shrink-0 rounded-full bg-[#A9843F] text-white flex items-center justify-center text-[10px]">
+                <span class="mt-0.5 w-5 h-5 shrink-0 rounded-full bg-brandAccent text-white flex items-center justify-center text-[10px]">
                   <i class="fa-solid fa-check"></i>
                 </span>
                 <span class="text-sm">Capacitación en vivo adaptada a tus objetivos</span>
@@ -145,36 +145,36 @@
         <!-- Indicadores -->
         <div data-reveal class="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-8">
 
-          <!-- 100% Precisión BIM · Azul pizarra -->
-          <div class="flex items-center gap-4 bg-[#E1E7EA] border border-[#C2CDD3] rounded-2xl p-6 hover-card">
-            <div class="w-14 h-14 shrink-0 bg-[#4B6272] text-white rounded-xl flex items-center justify-center text-2xl shadow-md">
+          <!-- 100% Precisión BIM -->
+          <div class="flex items-center gap-4 bg-white shadow-sm border border-brandBorder rounded-2xl p-6 hover-card">
+            <div class="w-14 h-14 shrink-0 bg-brandAccent/10 text-brandAccent rounded-xl flex items-center justify-center text-2xl">
               <i class="fa-solid fa-cubes"></i>
             </div>
             <div class="text-left">
-              <div class="text-3xl font-extrabold text-[#25323B] leading-none">100%</div>
-              <div class="text-sm text-[#4F5F69] mt-1.5">Precisión BIM</div>
+              <div class="text-3xl font-extrabold text-brandPrimary leading-none">100%</div>
+              <div class="text-sm text-brandPrimary/75 mt-1.5">Precisión BIM</div>
             </div>
           </div>
 
-          <!-- 3D + 2D · Terracota -->
-          <div class="flex items-center gap-4 bg-[#F0DDD2] border border-[#DFC0AF] rounded-2xl p-6 hover-card">
-            <div class="w-14 h-14 shrink-0 bg-[#B0603F] text-white rounded-xl flex items-center justify-center text-2xl shadow-md">
+          <!-- 3D + 2D -->
+          <div class="flex items-center gap-4 bg-white shadow-sm border border-brandBorder rounded-2xl p-6 hover-card">
+            <div class="w-14 h-14 shrink-0 bg-brandAccent/10 text-brandAccent rounded-xl flex items-center justify-center text-2xl">
               <i class="fa-solid fa-ruler-combined"></i>
             </div>
             <div class="text-left">
-              <div class="text-3xl font-extrabold text-[#40221A] leading-none">3D + 2D</div>
-              <div class="text-sm text-[#6E4538] mt-1.5">Planos ejecutivos</div>
+              <div class="text-3xl font-extrabold text-brandPrimary leading-none">3D + 2D</div>
+              <div class="text-sm text-brandPrimary/75 mt-1.5">Planos ejecutivos</div>
             </div>
           </div>
 
-          <!-- Directo · Salvia -->
-          <div class="flex items-center gap-4 bg-[#E6EADF] border border-[#CBD3C0] rounded-2xl p-6 hover-card">
-            <div class="w-14 h-14 shrink-0 bg-brandGreen text-white rounded-xl flex items-center justify-center text-3xl shadow-md">
+          <!-- Directo -->
+          <div class="flex items-center gap-4 bg-white shadow-sm border border-brandBorder rounded-2xl p-6 hover-card">
+            <div class="w-14 h-14 shrink-0 bg-brandGreen/15 text-brandGreen rounded-xl flex items-center justify-center text-3xl">
               <i class="fa-brands fa-whatsapp"></i>
             </div>
             <div class="text-left">
-              <div class="text-3xl font-extrabold text-[#2F3A2A] leading-none">Directo</div>
-              <div class="text-sm text-[#55604E] mt-1.5">Asesoría por WhatsApp</div>
+              <div class="text-3xl font-extrabold text-brandPrimary leading-none">Directo</div>
+              <div class="text-sm text-brandPrimary/75 mt-1.5">Asesoría por WhatsApp</div>
             </div>
           </div>
 
@@ -182,57 +182,96 @@
       </div>
     </section>
 
-    <!-- ==================== CTA CLARO ==================== -->
-    <section class="relative py-24 bg-brandBg border-b border-brandBorder overflow-hidden">
-      <!-- Cuadrícula animada de fondo -->
-      <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
-        <div class="absolute inset-0 w-full h-full plano-fino" style="
-          background-image:
-            linear-gradient(to right, rgba(31,111,84,0.22) 2px, transparent 2px),
-            linear-gradient(to bottom, rgba(31,111,84,0.22) 2px, transparent 2px);
-          background-size: 44px 44px;
-          opacity: 1;
-        "></div>
-        <div class="absolute inset-0 w-full h-full plano-grueso" style="
-          background-image:
-            linear-gradient(to right, rgba(31,111,84,0.14) 2px, transparent 2px),
-            linear-gradient(to bottom, rgba(31,111,84,0.14) 2px, transparent 2px);
-          background-size: 132px 132px;
-          opacity: 1;
-        "></div>
+    <!-- ==================== UBÍCANOS ==================== -->
+    <section id="ubicanos" class="py-24 bg-white border-b border-brandBorder">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="text-center max-w-2xl mx-auto mb-12" data-reveal>
+          <p class="text-sm sm:text-base font-bold tracking-widest text-brandAccent uppercase">Ubícanos</p>
+          <h2 class="mt-3 text-3xl sm:text-4xl font-semibold text-brandPrimary leading-tight">Visítanos en Trujillo</h2>
+          <p class="mt-4 text-brandPrimary/90 font-medium text-base sm:text-lg leading-relaxed">
+            Coordina tu visita por WhatsApp y te atendemos en nuestro estudio.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-5 gap-6 lg:gap-8 items-stretch">
+
+          <!-- Datos de contacto -->
+          <div data-reveal class="lg:col-span-2 bg-brandBg border border-brandBorder rounded-2xl p-8 flex flex-col gap-6">
+            <div class="flex items-start gap-4">
+              <span class="w-12 h-12 shrink-0 rounded-xl bg-brandAccent/10 text-brandAccent text-xl flex items-center justify-center"><i class="fa-solid fa-location-dot"></i></span>
+              <div>
+                <p class="text-[11px] font-bold tracking-widest text-brandAccent uppercase">Dirección</p>
+                <p class="mt-1 text-lg font-semibold text-brandPrimary">Jr. Grau 439</p>
+                <p class="text-[15px] text-brandPrimary/75">Trujillo 13001, La Libertad, Perú</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <span class="w-12 h-12 shrink-0 rounded-xl bg-brandGreen/15 text-brandGreen text-2xl flex items-center justify-center"><i class="fa-brands fa-whatsapp"></i></span>
+              <div>
+                <p class="text-[11px] font-bold tracking-widest text-brandAccent uppercase">WhatsApp</p>
+                <a href="https://wa.me/51951727167" target="_blank" rel="noopener" class="mt-1 block text-lg font-semibold text-brandPrimary hover:text-brandAccent transition-colors">+51 951 727 167</a>
+                <p class="text-[15px] text-brandPrimary/75">Escríbenos antes de venir</p>
+              </div>
+            </div>
+
+            <div class="mt-auto flex flex-col sm:flex-row lg:flex-col xl:flex-row gap-3">
+              <a href="https://www.google.com/maps/dir/?api=1&destination=-8.1147771,-79.0258951" target="_blank" rel="noopener" class="flex-1 inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-brandAccent text-white font-bold shadow-md hover:bg-brandPrimary transition-colors">
+                <i class="fa-solid fa-diamond-turn-right"></i> Cómo llegar
+              </a>
+              <a href="https://wa.me/51951727167?text=Hola%20Micky%20Arquitectos%2C%20quiero%20coordinar%20una%20visita%20al%20estudio." target="_blank" rel="noopener" class="flex-1 inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-white border-2 border-brandPrimary/20 text-brandPrimary font-bold hover:border-brandAccent hover:text-brandAccent transition-colors">
+                <i class="fa-brands fa-whatsapp"></i> Agendar visita
+              </a>
+            </div>
+          </div>
+
+          <!-- Mapa -->
+          <div data-reveal class="lg:col-span-3 rounded-2xl overflow-hidden border border-brandBorder shadow-sm min-h-[320px] lg:min-h-[420px]">
+            <iframe
+              src="https://www.google.com/maps?q=-8.1147771,-79.0258951&z=17&hl=es&output=embed"
+              title="Mapa de ubicación de Micky Arquitectos, Jr. Grau 439, Trujillo"
+              class="w-full h-full min-h-[320px] lg:min-h-[420px] border-0"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen></iframe>
+          </div>
+
+        </div>
       </div>
+    </section>
 
-      <!-- CAD overlay decorativo -->
-      <svg class="cad-overlay" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 700" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
-        <g fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.9"><path d="M20 58 L20 20 L58 20"/><circle cx="20" cy="20" r="2.5" fill="currentColor" stroke="none"/><path d="M1420 58 L1420 20 L1382 20"/><circle cx="1420" cy="20" r="2.5" fill="currentColor" stroke="none"/><path d="M20 642 L20 680 L58 680"/><circle cx="20" cy="680" r="2.5" fill="currentColor" stroke="none"/><path d="M1420 642 L1420 680 L1382 680"/><circle cx="1420" cy="680" r="2.5" fill="currentColor" stroke="none"/></g>
-        <g fill="currentColor" font-family="'Courier New',monospace" font-size="8.5" opacity="0.75"><text x="64" y="24">X:0.00  Y:0.00</text><text x="1272" y="24">ESCALA  1:100</text><text x="64" y="677">LAYER: ARQ-01</text><text x="1232" y="677">PLANTA GENERAL</text></g>
-        <g fill="none" stroke="currentColor" stroke-width="1" opacity="0.7"><line x1="104" y1="47" x2="460" y2="47"/><line x1="104" y1="41" x2="104" y2="53"/><line x1="460" y1="41" x2="460" y2="53"/><polyline points="114,44 104,47 114,50"/><polyline points="450,44 460,47 450,50"/></g>
-        <text x="282" y="44" text-anchor="middle" fill="currentColor" font-family="'Courier New',monospace" font-size="9" font-weight="bold" opacity="0.8">12.50 m</text>
-        <g fill="none" stroke="currentColor" stroke-width="1" opacity="0.7"><line x1="1370" y1="88" x2="1370" y2="350"/><line x1="1364" y1="88" x2="1376" y2="88"/><line x1="1364" y1="350" x2="1376" y2="350"/><polyline points="1367,98 1370,88 1373,98"/><polyline points="1367,340 1370,350 1373,340"/></g>
-        <text x="1382" y="225" fill="currentColor" font-family="'Courier New',monospace" font-size="9" font-weight="bold" opacity="0.8">6.00 m</text>
-        <g stroke="currentColor" stroke-width="0.8" fill="none" stroke-dasharray="12,6,3,6" opacity="0.45"><line x1="80" y1="362" x2="580" y2="362"/><line x1="310" y1="68" x2="310" y2="440"/></g>
-        <g stroke="currentColor" fill="none" opacity="0.65"><circle cx="310" cy="362" r="16" stroke-width="1.2"/><line x1="292" y1="362" x2="328" y2="362" stroke-width="0.9"/><line x1="310" y1="344" x2="310" y2="380" stroke-width="0.9"/></g>
-        <text x="333" y="358" fill="currentColor" font-family="'Courier New',monospace" font-size="8.5" opacity="0.7">EJE 1</text>
-        <g stroke="currentColor" fill="none" opacity="0.65"><circle cx="1110" cy="435" r="13" stroke-width="1.5"/><line x1="1123" y1="425" x2="1162" y2="405" stroke-width="1"/></g>
-        <text x="1110" y="439" text-anchor="middle" fill="currentColor" font-family="'Courier New',monospace" font-size="10" font-weight="bold" opacity="0.75">01</text>
-        <g stroke="currentColor" stroke-width="0.9" fill="none" opacity="0.5"><line x1="496" y1="176" x2="508" y2="176"/><line x1="502" y1="170" x2="502" y2="182"/><line x1="748" y1="275" x2="760" y2="275"/><line x1="754" y1="269" x2="754" y2="281"/></g>
-        <g fill="currentColor" font-family="'Courier New',monospace" font-size="8" opacity="0.5"><text x="28" y="140">±0.00</text><text x="28" y="316">+6.00</text><text x="28" y="492">+12.00</text></g>
-        <g fill="currentColor" font-family="'Courier New',monospace" font-size="9" font-weight="bold" text-anchor="middle" opacity="0.5"><text x="352" y="82">B</text><text x="704" y="82">D</text><text x="1056" y="82">F</text></g>
-      </svg>
+    <!-- ==================== CTA DESTACADO ==================== -->
+    <section class="relative overflow-hidden py-20 sm:py-28 bg-brandPrimary">
+      <!-- Cuadrícula decorativa -->
+      <div class="pointer-events-none absolute inset-0 opacity-[0.07]" aria-hidden="true" style="background-image: linear-gradient(to right, #fff 1px, transparent 1px), linear-gradient(to bottom, #fff 1px, transparent 1px); background-size: 44px 44px;"></div>
+      <div class="pointer-events-none absolute -left-32 -bottom-32 w-[28rem] h-[28rem] rounded-full bg-brandAccent/40 blur-3xl" aria-hidden="true"></div>
+      <div class="pointer-events-none absolute -right-32 -top-32 w-80 h-80 rounded-full bg-brandAccent/20 blur-3xl" aria-hidden="true"></div>
 
-      <div class="relative max-w-4xl mx-auto px-4 text-center" data-reveal>
-        <p class="text-[11px] font-bold tracking-widest text-brandAccent uppercase">Trabajemos juntos</p>
-        <h2 class="mt-4 text-3xl sm:text-4xl font-semibold text-brandPrimary leading-tight">Conoce lo que podemos hacer por tu proyecto</h2>
-        <p class="mt-5 max-w-2xl mx-auto text-brandSecondary text-sm leading-relaxed">
-          Revisa nuestros servicios de modelado, planos y capacitación técnica.
-        </p>
-        <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a href="servicios.html" class="w-full sm:w-auto px-8 py-4 rounded-xl border border-brandBorder text-brandPrimary font-semibold hover:bg-brandBg transition-colors text-center">
-            Ver servicios
-          </a>
-          <a href="flujo.html" class="w-full sm:w-auto px-8 py-4 rounded-xl border border-brandBorder text-brandPrimary font-semibold hover:bg-brandBg transition-colors text-center">
-            Cómo funciona
-          </a>
+      <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8" data-reveal>
+        <div class="grid grid-cols-1 lg:grid-cols-5 gap-10 items-center">
+          <div class="lg:col-span-3 text-center lg:text-left">
+            <span class="inline-flex items-center gap-2 rounded-full bg-white/10 border border-white/20 px-4 py-1.5 text-xs sm:text-sm font-bold tracking-widest text-brandGreen uppercase">
+              <i class="fa-solid fa-handshake"></i> Trabajemos juntos
+            </span>
+            <h2 class="mt-5 text-3xl sm:text-4xl lg:text-[2.6rem] font-semibold text-white leading-tight">Conoce lo que podemos hacer por tu proyecto</h2>
+            <p class="mt-4 text-white/80 text-base sm:text-lg leading-relaxed max-w-xl mx-auto lg:mx-0">
+              Revisa nuestros servicios de modelado, planos y capacitación técnica.
+            </p>
+            <ul class="mt-6 flex flex-wrap justify-center lg:justify-start gap-x-6 gap-y-2 text-sm font-medium text-white/90">
+              <li class="inline-flex items-center gap-2"><i class="fa-solid fa-circle-check text-brandGreen"></i> Revit · AutoCAD · SketchUp</li>
+              <li class="inline-flex items-center gap-2"><i class="fa-solid fa-circle-check text-brandGreen"></i> Atención directa</li>
+            </ul>
+          </div>
+
+          <div class="lg:col-span-2 flex flex-col gap-4">
+            <a href="servicios.html" class="w-full inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-brandGreen text-white text-lg font-bold shadow-lg shadow-black/30 hover:brightness-110 transition">
+              Ver servicios <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="flujo.html" class="w-full inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-white/10 border border-white/25 text-white text-lg font-bold hover:bg-white hover:text-brandPrimary transition-colors">
+              Cómo funciona
+            </a>
+          </div>
         </div>
       </div>
     </section>

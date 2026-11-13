@@ -44,6 +44,9 @@ const FOOTER_FALLBACK = `
       <img src="imagenes/logo_micky_arquitectos_solo.jpeg" alt="Micky Arquitectos" class="h-8 w-auto mb-2" onerror="this.style.display='none'">
       <strong class="text-brandPrimary text-lg font-bold tracking-wider block">Micky Arquitectos</strong>
       <p class="text-[12px] text-brandSecondary mt-1">Arquitectura | Ingeniería Civil — Revit · AutoCAD · SketchUp</p>
+      <a href="https://www.google.com/maps/place/Jr.+Grau+439,+Trujillo+13001/@-8.1147771,-79.0258951,17z" target="_blank" rel="noopener" class="mt-3 inline-flex items-center gap-2 text-sm font-medium text-brandPrimary hover:text-brandAccent transition-colors">
+        <i class="fa-solid fa-location-dot text-brandAccent"></i> Jr. Grau 439, Trujillo
+      </a>
     </div>
     <div class="text-xs">
       <p class="text-[10px] font-bold tracking-widest text-brandSecondary uppercase mb-3">Secciones</p>
@@ -52,6 +55,7 @@ const FOOTER_FALLBACK = `
         <li><a href="nosotros.html" class="text-brandSecondary hover:text-brandAccent transition-colors">Nosotros</a></li>
         <li><a href="servicios.html" class="text-brandSecondary hover:text-brandAccent transition-colors">Servicios</a></li>
         <li><a href="flujo.html" class="text-brandSecondary hover:text-brandAccent transition-colors">Cómo funciona</a></li>
+        <li><a href="nosotros.html#ubicanos" class="text-brandSecondary hover:text-brandAccent transition-colors">Ubícanos</a></li>
       </ul>
     </div>
     <div class="text-xs flex flex-col items-center md:items-end gap-2">
