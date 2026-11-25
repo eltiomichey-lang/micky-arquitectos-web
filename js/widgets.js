@@ -33,7 +33,7 @@
         </div>
         <div>
           <label class="block font-semibold text-brandPrimary mb-1">Universidad / Empresa (Opcional)</label>
-          <input type="text" placeholder="Ej: UPN / UCV / UNI" class="w-full px-3.5 py-2.5 rounded-xl border border-brandBorder bg-white focus:outline-none focus:border-brandPrimary">
+          <input type="text" list="listaUniversidades" autocomplete="off" placeholder="Ej: PUCP, UPC, UNI y otras" class="w-full px-3.5 py-2.5 rounded-xl border border-brandBorder bg-white focus:outline-none focus:border-brandPrimary">
         </div>
         <div>
           <label class="block font-semibold text-brandPrimary mb-1">Contraseña *</label>
@@ -95,8 +95,18 @@
           <input id="reqName" type="text" required placeholder="Ej: Carlos Mendoza" class="w-full px-3.5 py-2.5 rounded-xl border border-brandBorder bg-white focus:outline-none">
         </div>
         <div>
-          <label class="block font-semibold text-brandPrimary mb-1">Universidad / Institución</label>
-          <input id="reqUni" type="text" placeholder="Ej: UNI / UPN / Particular" class="w-full px-3.5 py-2.5 rounded-xl border border-brandBorder bg-white focus:outline-none">
+          <label class="block font-semibold text-brandPrimary mb-1">Universidad</label>
+          <input id="reqUni" type="text" list="listaUniversidades" autocomplete="off" placeholder="Ej: PUCP, UPC, UNI y otras" class="w-full px-3.5 py-2.5 rounded-xl border border-brandBorder bg-white focus:outline-none">
+          <datalist id="listaUniversidades">
+            <option value="PUCP - Pontificia Universidad Católica del Perú"></option>
+            <option value="UPC - Universidad Peruana de Ciencias Aplicadas"></option>
+            <option value="UNI - Universidad Nacional de Ingeniería"></option>
+            <option value="Universidad de Lima"></option>
+            <option value="Universidad del Pacífico"></option>
+            <option value="USIL - Universidad San Ignacio de Loyola"></option>
+            <option value="URP - Universidad Ricardo Palma"></option>
+            <option value="Particular / Empresa"></option>
+          </datalist>
         </div>
         <div>
           <label class="block font-semibold text-brandPrimary mb-1">Tiempo de entrega deseado *</label>
@@ -189,7 +199,7 @@
   </div>
 
   <!-- Botón flotante de WhatsApp -->
-  <a href="https://wa.me/51951727167?text=Hola%20Micky%20Arquitectos%2C%20quiero%20cotizar%20un%20servicio."
+  <a href="https://wa.me/51934403147?text=Hola%20Micky%20Arquitectos%2C%20quiero%20cotizar%20un%20servicio."
      target="_blank" rel="noopener"
      class="fixed bottom-6 left-6 z-40 w-14 h-14 rounded-full bg-brandGreen text-white shadow-xl shadow-black/25 flex items-center justify-center hover:scale-105 transition-transform"
      aria-label="Escribir por WhatsApp">

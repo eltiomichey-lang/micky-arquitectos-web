@@ -66,7 +66,7 @@ function sendWhatsAppRequest(event) {
                   `• Tiempo de entrega: ${time}\n` +
                   `• Proyecto: ${desc}`;
 
-  const phone = '51951727167';
+  const phone = '51934403147';
   const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 
   closeModal('serviceModal');
