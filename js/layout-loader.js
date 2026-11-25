@@ -47,6 +47,10 @@ const FOOTER_FALLBACK = `
       <a href="https://www.google.com/maps/place/Jr.+Grau+439,+Trujillo+13001/@-8.1147771,-79.0258951,17z" target="_blank" rel="noopener" class="mt-3 inline-flex items-center gap-2 text-sm font-medium text-brandPrimary hover:text-brandAccent transition-colors">
         <i class="fa-solid fa-location-dot text-brandAccent"></i> Jr. Grau 439, Trujillo
       </a>
+      <div class="mt-2 flex flex-col items-center md:items-start gap-1 text-sm font-medium">
+        <a href="https://wa.me/51934403147" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-brandPrimary hover:text-brandAccent transition-colors"><i class="fa-brands fa-whatsapp text-brandGreen"></i> +51 934 403 147 · Ernesto</a>
+        <a href="https://wa.me/51951727167" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-brandPrimary hover:text-brandAccent transition-colors"><i class="fa-brands fa-whatsapp text-brandGreen"></i> +51 951 727 167</a>
+      </div>
     </div>
     <div class="text-xs">
       <p class="text-[10px] font-bold tracking-widest text-brandSecondary uppercase mb-3">Secciones</p>

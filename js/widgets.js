@@ -175,7 +175,7 @@
 
       <div class="pt-6 border-t border-brandBorder">
         <p class="text-sm text-brandSecondary mb-4">Todas las clases son en vivo y adaptadas a tus propios proyectos prácticos.</p>
-        <button onclick="selectServiceModal('Capacitación Técnica'); closeModal('clasesModal');" class="w-full py-3 bg-brandGreen text-white font-bold rounded-xl hover:bg-emerald-500 transition-colors flex items-center justify-center gap-2">
+        <button onclick="selectServiceModal('Asesorías personalizadas'); closeModal('clasesModal');" class="w-full py-3 bg-brandGreen text-white font-bold rounded-xl hover:bg-emerald-500 transition-colors flex items-center justify-center gap-2">
           <i class="fa-brands fa-whatsapp"></i> Cotizar clases por WhatsApp
         </button>
       </div>
